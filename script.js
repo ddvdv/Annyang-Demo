@@ -13,7 +13,6 @@ var main = function() {
   $('form').submit(function() {
       var text = $('#todo').val();
       add(text);
-    	//$(html).appendTo('div .list');
     	$('#todo').val(''); 
     return false; 
   });
@@ -28,9 +27,8 @@ var main = function() {
   if (annyang) {
 
     var commands = {
-      'add *tag': add,
+      'add *tag': add
 
-      
     };
 
     annyang.addCommands(commands);
