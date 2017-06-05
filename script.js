@@ -28,7 +28,9 @@ var main = function() {
   if (annyang) {
 
     var commands = {
-      'add *tag': add
+      'add *tag': add,
+
+      
     };
 
     annyang.addCommands(commands);
